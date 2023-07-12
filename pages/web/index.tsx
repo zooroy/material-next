@@ -1,10 +1,12 @@
 import { Box, Typography } from '@mui/material';
+import { useTheme } from '@mui/material/styles';
 import React from 'react';
 import Button from '@mui/material/Button';
 import Link from '@/src/Link';
-import Label from '@/components/Label';
+import Label from '@/components/common/Label';
 
 const Web = () => {
+  const theme = useTheme();
   return (
     <>
       <Typography variant="h4" component="h1" gutterBottom>
@@ -12,6 +14,13 @@ const Web = () => {
         <br />
         我們字體, 主副顏色不一樣
       </Typography>
+      {/* <Box
+        sx={{
+          width: '50px',
+          height: '50px',
+          bgcolor: theme.palette.primary.main,
+        }}
+      /> */}
       <Box sx={{ '& button': { ml: 2 } }}>
         <Button variant="contained">Primary</Button>
         <Button color="secondary" variant="contained">
