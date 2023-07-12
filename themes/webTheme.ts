@@ -10,21 +10,31 @@ export const roboto = Roboto({
 });
 
 // Create a theme instance.
-const theme = createTheme({
-  palette: {
-    primary: {
-      main: '#556cd6',
-    },
-    secondary: {
-      main: '#19857b',
-    },
-    error: {
-      main: red.A400,
+const webTheme = createTheme({
+  components: {
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          borderRadius: '0px',
+          textTransform: 'none',
+        },
+      },
     },
   },
+  // palette: {
+  //   primary: {
+  //     main: '#556cd6',
+  //   },
+  //   secondary: {
+  //     main: '#19857b',
+  //   },
+  //   error: {
+  //     main: red.A400,
+  //   },
+  // },
   typography: {
     fontFamily: roboto.style.fontFamily,
   },
 });
 
-export default theme;
+export default webTheme;
