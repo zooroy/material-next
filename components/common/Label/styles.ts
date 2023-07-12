@@ -8,7 +8,7 @@ import {
   PRIMARY,
   SUCCESS,
   WARNING,
-} from 'shared/constants/colors';
+} from '@/shared/constants/colors';
 
 import { LabelProps } from '.';
 
