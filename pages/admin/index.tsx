@@ -19,10 +19,13 @@ const Admin = () => {
           bgcolor: theme.palette.primary.main,
         }}
       /> */}
-      <Box sx={{ '& button': { ml: 2 } }}>
+      <Box sx={{ '& button, a': { ml: 2 } }}>
         <Button variant="contained">Primary</Button>
         <Button color="secondary" variant="contained">
           Secondary
+        </Button>
+        <Button color="secondary" variant="outlined" component={Link} href="/">
+          Go Home
         </Button>
       </Box>
       <Box mt={2}>
